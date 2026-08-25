@@ -100,6 +100,11 @@ main section {
     gap: 20px;
     padding: 10px;
     scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.interior-scroll::-webkit-scrollbar {
+    display: none;
 }
 .interior-scroll section{
     min-width: 350px;
@@ -124,17 +129,6 @@ header{
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
-}
-.house-interior-scroll {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px;
-    scroll-behavior: smooth;
-}
-.house-interior-scroll > h4,
-.house-interior-scroll > a {
-    flex-shrink: 0;
 }
 .house-interior-card {
     min-width: 450px;
@@ -203,4 +197,42 @@ main > section {
 }
 .contact-card p {
     margin: 10px0;
+}
+.house-interior-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.house-interior-scroll::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+.interior-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+.interior-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.interior-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+.interior-card p {
+    margin: 12px0;
+    line-height: 1.5;
+    overflow-wrap: break-word;
 }
