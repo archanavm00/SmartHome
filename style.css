@@ -238,3 +238,23 @@ main > section {
     line-height: 1.5;
     overflow-wrap: break-word;
 }
+@media (max-width: 768px) {
+
+    .house-card {
+        width: 100%;
+    }
+
+    .house-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .house-details {
+        width: 100%;
+    }
+
+    .interior-card {
+        flex: 0 0 85%;
+    }
+
+}
